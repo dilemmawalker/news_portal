@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans|Playfair+Display|Indie+Flower');
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFFB8;
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.navigationBarLeft {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
+}
+
+.navigationBarRight {
+    display:flex;
+}
+
+.navigationBar div a {
+    text-decoration: none;
+    color:#4D4545;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+.newsGrid {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.miniNews {
+    width:30%;
+    min-width: 300px;
+    position:relative;
+    margin:10px 1.6% 10px 1.6%;
+    border-radius: 3px;
+    border: 0.1px solid #444806;
+    cursor: pointer;
+}
+
+.heading {
+    color: #4D4545;
+    background-color: #fff;
+    min-height:100px;
+    width:80%;
+    text-align: center;
+    margin: 190px auto 0 auto;
+    box-shadow: 0.1px -0.1px 1px #444806, -0.1px -0.1px 1px #444806;
+    border-radius: 1px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-size:10px;
+}
+
+.info{
+    margin:0;
+    padding: 8px;
+}
+
+.image {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    border-radius: 3px;
+    z-index: -1;
+    filter: contrast(200%);
+
+}
+
+.miniNews:hover .image {
+}
+
+.miniNews:hover .info {
+}
+
+.aiseHi {
+    height:100px;
+    background-color: white;
+}
+
+@media (max-width: 800px) {
+    .navigationBar {
+        text-align: center;
+        flex-direction: column;
+    }
+    .navigationBarRight {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .miniNews {
+        width:45%;
+        margin:10px 2.45% 10px 2.45%;
+    }
+}
+
+@media (max-width: 700px) {
+    .miniNews {
+        width: 68%;
+        margin: 15px 16% 15px 16%;
+    }
+}
+
+/*@media only screen*/
+/*and (width : 321px) {*/
+    /*!* Styles *!*/
+    /*.miniNews {*/
+        /*width: 60%;*/
+        /*margin: 15px 20% 15px 20%;*/
+    /*}*/
+/*}*/
